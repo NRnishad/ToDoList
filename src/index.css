@@ -73,3 +73,11 @@ li{
   margin-left: 10px;
 
 }
+.task-checkbox {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.text {
+  margin-right: 10px;
+}
