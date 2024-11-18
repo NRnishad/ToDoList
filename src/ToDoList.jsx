@@ -20,7 +20,13 @@ function ToDoList() {
           }
 
           function moveTaskUp(index) {
-                    
+                    if (index !== 0) {
+                              const updatedTasks = [...tasks]
+                              let temp=updatedTasks[index]  
+                              updatedTasks[index] =updatedTasks[index-1]  
+                              updatedTasks[index - 1] = temp 
+                              setTasks(updatedTasks)
+                    }
           }
 
           
